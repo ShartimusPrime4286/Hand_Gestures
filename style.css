@@ -1,0 +1,31 @@
+body
+{
+  color: white;
+  background: darkmagenta;
+}
+span
+{
+  font-size: 30px;
+}
+#camera , #result
+{
+  border: 2px dashed black;
+  width: 350px;
+  height: 300px; 
+}
+#result1 ,#result2  
+{
+  color: black;
+}
+.hand_gesture
+{
+  font-size: 40px;
+}
+.hand
+{
+  font-size:48px;
+}
+#heading{
+    margin-top: 30px;
+    border-radius: 50px;
+}

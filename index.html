@@ -1,0 +1,60 @@
+ 
+<html>
+    <head>
+      <title>Hand gesture</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+      <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  
+      <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+  
+    <body>
+    <div class="container">
+    
+      <center> 
+        <div id="heading" class="btn-info" style="font-size: 22px;">Hand Gestures
+          <br>
+          <span>&#9996;</span>
+          <span>&#128076;</span>
+          <span>&#128077;</span>
+        </div>
+  
+  
+  
+        <p style="font-size: 22px;">Take your hand gesture to get your emoji
+            <br>
+            <p>Trained hand gestures are given above in the heading</p>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <label>Webcam - </label>
+            <div id="camera"></div>
+            <br><br>
+            <button class="btn btn-success" onclick="take_snapshot()">Take Snapshot</button>
+            </div>
+          <div class="col-md-4 col-sm-12 col-xs-12">
+            <label>Your Hand gesture -</label>
+            <p class="hand_gesture" id="result_1"></p>
+            <p class="hand" id="emoji"></p>
+          </div>
+          <div class="col-md-4 col-sm-12 col-xs-12">
+            <label>Snapshot - </label>
+            <div id="result"></div>
+            <br><br>
+            <button class="btn btn-warning" onclick="predict()">Predict Hand gesture</button>
+            <br><br>
+            </div>
+  
+      </center>
+  
+    </div>
+  
+  <script src="main.js"></script>
+  
+    </body>
+  </html>
+  
+   
